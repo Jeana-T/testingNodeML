@@ -2,7 +2,7 @@ const { spawn } = require('child_process');
 
 const childPython = spawn('python', ['mlFile.py']);
 
-childPython.sntdout.on('data', (data) => {
+childPython.stdout.on('data', (data) => {
     console.log(`stdout: ${data}`);
 });
 

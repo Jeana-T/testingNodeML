@@ -1,3 +1,5 @@
+import os
+import sys
 import pandas as pd
 import math
 from datetime import datetime
@@ -97,4 +99,5 @@ precision_score(train_y, train_predictions)
 
 recall_score(train_y, train_predictions)
 
+print(os.path.expanduser('~'))
 print(predict_delay('1/10/2018 21:45:00', 'DEN', 'ATL'))
